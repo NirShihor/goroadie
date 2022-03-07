@@ -1,5 +1,5 @@
 const {getFibonacci} = require('./fibonacciService')
-
+// TEMP
 describe('Test services', function () {
 
     test('responds to /fibonacci', () => {
@@ -18,24 +18,16 @@ describe('Test services', function () {
         test('Computes arbitrary Fibonacci numbers', () => {
         function getFibonacci(num) {
             num = 11
-            try {
               expect(getFibonacci(num)).toBe(89);
               done();
-            } catch (error) {
-              done(error);
-            }
           }
        });
 
        test('Computes number 1 correctly', () => {
         function getFibonacci(num) {
             num = 1
-            try {
               expect(getFibonacci(num)).toBe(1);
               done();
-            } catch (error) {
-              done(error);
-            }
           }
        });
      });
